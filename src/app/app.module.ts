@@ -9,6 +9,8 @@ import { RodapeComponent } from './componentes/rodape/rodape/rodape.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CriarTarefaComponent } from './componentes/tarefas/criar-tarefa/criar-tarefa.component';
+import { EditarTarefaComponent } from './componentes/tarefas/editar-tarefa/editar-tarefa.component';
+import { ExcluirTarefaComponent } from './componentes/tarefas/excluir-tarefa/excluir-tarefa.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { CriarTarefaComponent } from './componentes/tarefas/criar-tarefa/criar-t
     ListarTarefasComponent,
     CabecalhoComponent,
     RodapeComponent,
-    CriarTarefaComponent
+    CriarTarefaComponent,
+    EditarTarefaComponent,
+    ExcluirTarefaComponent
   ],
   imports: [
     BrowserModule,

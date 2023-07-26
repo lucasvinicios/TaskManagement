@@ -24,6 +24,12 @@ export class CriarTarefaComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  criar() {
+    this.service.criar(this.tarefa).subscribe(() => {
+      this.router.navigate(['/listarTarefas']);
+    })
+  }
+
   cancelar() {
     this.router.navigate(['/listarTarefas']);
   }

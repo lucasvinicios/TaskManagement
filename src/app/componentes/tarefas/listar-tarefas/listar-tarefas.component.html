@@ -15,11 +15,11 @@
       <td>{{ tarefa.descricao }}</td>
       <td>{{ tarefa.data | date }}</td>
       <td>
-        <button>Editar</button>
-        <button>Excluir</button>
+        <button routerLink="/editarTarefa/{{ tarefa.id }}">Editar</button>
+        <button routerLink="/excluirTarefa/{{ tarefa.id }}">Excluir</button>
       </td>
     </tr>
   </tbody>
 </table>
 
-<button routerLink="/criarTarefas">Criar Nova Tarefa</button>
+<button routerLink="/criarTarefa">Criar Nova Tarefa</button>

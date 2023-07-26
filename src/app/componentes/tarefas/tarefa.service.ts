@@ -16,4 +16,23 @@ export class TarefaService {
     return this.http.get<Tarefa[]>(this.API);
   }
 
+  criar(tarefa: Tarefa): Observable<Tarefa> {
+    return this.http.post<Tarefa>(this.API, tarefa);
+  }
+
+  editar(Tarefa: Tarefa): Observable<Tarefa> {
+    const url = `${this.API}/${Tarefa.id}`;
+    return this.http.put<Tarefa>(url, Tarefa);
+  }
+
+  excluir(id: number): Observable<Tarefa> {
+    const url = `${this.API}/${id}`;
+    return this.http.delete<Tarefa>(url);
+  }
+
+  buscarPorId(id: number): Observable<Tarefa> {
+    const url = `${this.API}/${id}`;
+    return this.http.get<Tarefa>(url);
+  }
+
   }
