@@ -1,0 +1,22 @@
+<h1>Criar Tarefa</h1>
+
+<form #taskForm="ngForm">
+  <div>
+    <label for="title">Tarefa:</label>
+    <input type="text" id="title" name="title" required [(ngModel)]="tarefa.titulo">
+  </div>
+  <div>
+    <label for="description">Descrição:</label>
+    <input type="text" id="description" name="description" required [(ngModel)]="tarefa.descricao">
+  </div>
+  <div>
+    <label for="dueDate">Data de conclusão:</label>
+    <input type="date" id="dueDate" name="dueDate" required [(ngModel)]="tarefa.data">
+  </div>
+
+  <div class="botoes">
+    <button type="submit" class="btn">Criar Tarefa</button>
+    <button (click)="cancelar()" class="btn">Voltar para Lista</button>
+  </div>
+</form>
+

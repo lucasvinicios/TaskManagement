@@ -1,0 +1,25 @@
+<h1>Lista de Tarefas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tarefa</th>
+      <th>Descrição</th>
+      <th>Data de conclusão</th>
+      <th>Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let tarefa of listarTarefas">
+      <td>{{ tarefa.titulo }}</td>
+      <td>{{ tarefa.descricao }}</td>
+      <td>{{ tarefa.data | date }}</td>
+      <td>
+        <button>Editar</button>
+        <button>Excluir</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<button routerLink="/criarTarefas">Criar Nova Tarefa</button>
