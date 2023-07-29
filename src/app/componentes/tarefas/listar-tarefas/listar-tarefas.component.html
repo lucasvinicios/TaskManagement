@@ -11,9 +11,9 @@
   </thead>
   <tbody>
     <tr *ngFor="let tarefa of listarTarefas">
-      <td>{{ tarefa.titulo }}</td>
-      <td>{{ tarefa.descricao }}</td>
-      <td>{{ tarefa.data | date }}</td>
+      <td>{{ tarefa.title }}</td>
+      <td>{{ tarefa.description }}</td>
+      <td>{{ tarefa.date | date }}</td>
       <td>
         <button routerLink="/editarTarefa/{{ tarefa.id }}">Editar</button>
         <button routerLink="/excluirTarefa/{{ tarefa.id }}">Excluir</button>

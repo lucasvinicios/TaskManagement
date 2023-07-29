@@ -11,9 +11,9 @@ import { Router } from '@angular/router';
 export class CriarTarefaComponent implements OnInit {
 
   tarefa: Tarefa = {
-    titulo: '',
-    descricao: '',
-    data: new Date
+    title: '',
+    description: '',
+    date: new Date
   }
 
   constructor(

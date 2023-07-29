@@ -11,9 +11,9 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class ExcluirTarefaComponent implements OnInit {
 
   tarefa: Tarefa = {
-    titulo: '',
-    descricao: '',
-    data: new Date
+    title: '',
+    description: '',
+    date: new Date
   }
 
   constructor(

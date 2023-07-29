@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class TarefaService {
 
-  private readonly API = 'http://localhost:3000/tarefas';
+  private readonly API = 'http://127.0.0.1:8000/api/task';
 
   constructor(private http: HttpClient) { }
 
@@ -16,8 +16,9 @@ export class TarefaService {
     return this.http.get<Tarefa[]>(this.API);
   }
 
-  criar(tarefa: Tarefa): Observable<Tarefa> {
-    return this.http.post<Tarefa>(this.API, tarefa);
+  criar(task: Tarefa): Observable<Tarefa> {
+    const url = `${this.API}/task`;
+    return this.http.post<Tarefa>(this.API, task);
   }
 
   editar(Tarefa: Tarefa): Observable<Tarefa> {

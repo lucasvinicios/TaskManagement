@@ -12,9 +12,9 @@ export class EditarTarefaComponent implements OnInit {
 
   tarefa: Tarefa = {
     id: 0,
-    titulo: '',
-    descricao: '',
-    data: new Date
+    title: '',
+    description: '',
+    date: new Date
   }
 
   constructor(

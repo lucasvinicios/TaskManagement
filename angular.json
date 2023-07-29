@@ -51,6 +51,7 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
+              "outputPath": "../../../public/assets/angular",
               "outputHashing": "all"
             },
             "development": {
@@ -59,7 +60,13 @@
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
-              "namedChunks": true
+              "namedChunks": true,
+              "outputPath": "../../public/assets/angular",
+              "baseHref": "/assets/angular/"
+            },
+            "dev" : {
+              "outputPath": "dist/assets/angular",
+              "baseHref": "/assets/angular/"
             }
           },
           "defaultConfiguration": "production"

@@ -3,15 +3,15 @@
 <form #taskForm="ngForm">
   <div>
     <label for="title">Tarefa:</label>
-    <input type="text" id="title" name="title" required [(ngModel)]="tarefa.titulo">
+    <input type="text" id="title" name="title" required [(ngModel)]="tarefa.title">
   </div>
   <div>
     <label for="description">Descrição:</label>
-    <input type="text" id="description" name="description" required [(ngModel)]="tarefa.descricao">
+    <input type="text" id="description" name="description" required [(ngModel)]="tarefa.description">
   </div>
   <div>
     <label for="dueDate">Data de conclusão:</label>
-    <input type="date" id="dueDate" name="dueDate" required [(ngModel)]="tarefa.data">
+    <input type="date" id="dueDate" name="dueDate" required [(ngModel)]="tarefa.date">
   </div>
 
   <div class="botoes">
